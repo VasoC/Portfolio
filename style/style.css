@@ -86,3 +86,51 @@
   top: 385px;
   right: 130px;
 }
+.text h1 {
+  font-size: 71px;
+  color: black;
+}
+.text h2 {
+  font-size: 49.9px;
+  color: black;
+}
+.text h3 {
+  font-size: 23.29px;
+  color: black;
+}
+/* რესფონსივისთვის ცალკე ფაილის შექმნას ვამჯობინე ერთფაილში დაწერა */
+@media (max-width: 955px) {
+  .main-text {
+    top: 200px;
+  }
+  .text h1 {
+    font-size: 45px;
+    color: aquamarine;
+  }
+  .text h2 {
+    font-size: 29px;
+    color: aquamarine;
+  }
+  .text h3 {
+    font-size: 15px;
+    color: aquamarine;
+  }
+}
+@media (max-width: 510px) {
+  .main-text {
+    right: 21px;
+    top: 130px;
+  }
+  .text h1 {
+    font-size: 25px;
+    color: aquamarine;
+  }
+  .text h2 {
+    font-size: 15px;
+    color: aquamarine;
+  }
+  .text h3 {
+    font-size: 10px;
+    color: aquamarine;
+  }
+}

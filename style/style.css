@@ -74,7 +74,8 @@
 .logo {
   width: 100px;
   height: 50px;
-  background-color: aqua;
+  background-color: rgb(202, 218, 218);
+  border-radius: 50%;
 }
 @keyframes fade {
   from {

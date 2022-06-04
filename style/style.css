@@ -76,3 +76,13 @@
     opacity: 1;
   }
 }
+.main-text {
+  position: absolute;
+  justify-content: center;
+  z-index: 10;
+  max-width: 1920px;
+  width: 100%;
+  text-align: right;
+  top: 385px;
+  right: 130px;
+}

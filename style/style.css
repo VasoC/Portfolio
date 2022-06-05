@@ -193,6 +193,48 @@ h1 {
 .address {
   color: rgb(156, 107, 44);
 }
+/* სტილები სერვისებისთვის */
+
+.service-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 340px;
+  background-color: #fafafa;
+  opacity: 0.97;
+  border: 1px rgb(185, 182, 182) solid;
+  margin-right: 10px;
+  position: relative;
+  color: #222222;
+}
+
+.service-one img {
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+.service-one h3 {
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.44px;
+  color: #222222;
+}
+
+.four-services {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* რესფონსივისთვის ცალკე ფაილის შექმნას ვამჯობინე ერთფაილში დაწერა */
 @media (max-width: 955px) {
   .main-text {
@@ -264,5 +306,15 @@ h1 {
 @media (max-width: 700px) {
   .icons {
     padding-top: 20px;
+  }
+}
+@media (max-width: 1160px) {
+  .service-one {
+    width: 100px;
+  }
+}
+@media (max-width: 475px) {
+  .four-services {
+    flex-wrap: wrap;
   }
 }

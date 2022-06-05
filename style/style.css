@@ -447,6 +447,64 @@ h1 {
   background-color: #e93656;
 }
 
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.column-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name-form {
+  width: 290px;
+  height: 50px;
+  border: none;
+  outline: none;
+}
+input {
+  font-size: 10px;
+  line-height: 52px;
+  color: #515151;
+  padding-left: 30px;
+}
+
+.main-form-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-form-ro div {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+textarea {
+  width: 900px;
+  height: 110px;
+  padding: 30px;
+  outline: none;
+}
+
+#send-button {
+  border: 2px solid #98142c;
+  background-color: transparent;
+  color: #e93656;
+  font-size: 12px;
+  line-height: 50px;
+  letter-spacing: 0.96px;
+  padding: 0 40px;
+  margin-top: 30px;
+}
+
+#send-button:hover {
+  background-color: #e93656;
+  color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
 /* რესფონსივისთვის ცალკე ფაილის შექმნას ვამჯობინე ერთფაილში დაწერა */
 @media (max-width: 955px) {
   .main-text {
@@ -564,5 +622,23 @@ h1 {
   }
   .article-content p {
     width: 200px;
+  }
+}
+@media (max-width: 925px) {
+  #message {
+    width: 200px;
+    justify-content: center;
+  }
+  .name-form {
+    justify-content: flex-start;
+  }
+  .name-form {
+    width: 200px;
+  }
+}
+
+@media (max-width: 630px) {
+  .name-form {
+    width: 10px;
   }
 }

@@ -175,7 +175,24 @@ h1 {
   display: block;
   color: #e93656;
 }
+.contact {
+  max-height: 1920px;
+  width: 100%;
+  height: 210px;
+  background-color: #131a36;
+}
+.contact-info {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding-top: 80px;
+}
 
+.phone-number,
+.email,
+.address {
+  color: rgb(156, 107, 44);
+}
 /* რესფონსივისთვის ცალკე ფაილის შექმნას ვამჯობინე ერთფაილში დაწერა */
 @media (max-width: 955px) {
   .main-text {
@@ -214,6 +231,12 @@ h1 {
   }
   #me {
     display: none;
+  }
+  .contact-info svg {
+    width: 20px;
+  }
+  .contact-info span {
+    font-size: 10px;
   }
 }
 @media (max-width: 450px) {

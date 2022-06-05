@@ -235,6 +235,218 @@ h1 {
   align-items: center;
 }
 
+/* articles section */
+.articles {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.articles-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.articles-title span {
+  font-size: 13px;
+  line-height: 36px;
+  color: #2ed279;
+  margin-bottom: 5px;
+  font-family: "Poppins";
+}
+.articles-title h3 {
+  font-size: 70px;
+  line-height: 36px;
+  color: #2e2e2e;
+  margin-bottom: 70px;
+  font-family: "Poppins";
+}
+
+.one-block {
+  display: flex;
+  flex-direction: row;
+}
+
+.second-block {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.description-box {
+  width: 745px;
+  height: 490px;
+  background-color: #ffffff;
+}
+
+.second-article {
+  width: 670px;
+}
+.middle-blue-box {
+  width: 120px;
+  height: 490px;
+  background-color: #15263e;
+}
+
+.article-image {
+  width: 840px;
+  height: 490px;
+  background-image: url("../images/aricle1.jpg");
+  object-fit: cover;
+}
+
+.second-article-image {
+  width: 875px;
+  background-image: url("../images/article2.jpg");
+}
+.third-article-image {
+  background-image: url("../images/article3.jpg");
+}
+
+.rotated-text {
+  transform: rotate(-90deg);
+  transform-origin: 176px 139px;
+  display: block;
+  width: 160px;
+  font-size: 30px;
+  line-height: 44px;
+  letter-spacing: 0.44px;
+  color: #e93656;
+}
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 30px;
+  background-color: #fafafa;
+  width: 80%;
+  margin-left: 20%;
+  height: 490px;
+}
+
+.article-content-second {
+  margin-left: 0;
+}
+
+.square-icon1 {
+  width: 70px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+
+.square-icon2 {
+  width: 70px;
+  padding: 20px;
+  border-radius: 50px;
+  margin-bottom: 30px;
+  background-color: #e93656;
+}
+
+.square-icon3 {
+  transform: rotate(180deg);
+  width: 70px;
+  padding: 20px;
+  border-radius: 50px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+}
+
+.article-content span {
+  font-size: 14px;
+  line-height: 16.8px;
+  letter-spacing: 1.12px;
+  color: #888888;
+  margin-bottom: 10px;
+  font-family: "Lato";
+}
+.article-content h3 {
+  font-size: 40px;
+  line-height: 44px;
+  color: #161616;
+  margin-bottom: 25px;
+  font-family: "Lato";
+}
+
+.article-content p {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.48px;
+  color: #494949;
+  font-family: "Lato";
+}
+
+/* team section */
+.team-section {
+  margin-top: 170px;
+  margin-bottom: 180px;
+}
+
+.five-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 70px 200px;
+}
+
+.partner-box {
+  position: relative;
+}
+
+.icon-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160%;
+  height: 150%;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 3px #e93656 solid;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.icon-overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.icon-overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.icon-overlay:hover > * {
+  transform: translateY(0);
+}
+
+.icon-overlay h3 {
+  font-size: 16px;
+  line-height: 28px;
+  color: #161616;
+  letter-spacing: 0.32px;
+  margin-bottom: 10px;
+  font-family: "Lato";
+}
+
+.icon-overlay p {
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.39px;
+  color: #626262;
+  margin-bottom: 10px;
+  font-family: "Lato";
+}
+.services :hover {
+  background-color: #e93656;
+}
+
 /* რესფონსივისთვის ცალკე ფაილის შექმნას ვამჯობინე ერთფაილში დაწერა */
 @media (max-width: 955px) {
   .main-text {
@@ -316,5 +528,41 @@ h1 {
 @media (max-width: 475px) {
   .four-services {
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 1160px) {
+  .one-block {
+    flex-wrap: wrap;
+  }
+  .second-block {
+    flex-wrap: wrap;
+  }
+  .middle-blue-box {
+    display: none;
+  }
+  .third-article-image {
+    display: none;
+  }
+}
+@media (max-width: 710px) {
+  .decor {
+    width: 600px;
+    padding-left: 75px;
+  }
+}
+@media (max-width: 630px) {
+  .decor {
+    width: 450px;
+    padding-left: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .decor {
+    width: 300px;
+    padding-left: 38px;
+    padding-top: 244px;
+  }
+  .article-content p {
+    width: 200px;
   }
 }

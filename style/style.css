@@ -109,7 +109,8 @@ h1 {
   padding-top: 65px;
 }
 #me {
-  width: 430px;
+  max-width: 430px;
+  width: 100%;
   height: 603px;
 }
 .info-section {
@@ -159,6 +160,19 @@ h1 {
 
 .hover a {
   text-decoration: none;
+  color: #382020;
+}
+.hover :hover {
+  background-color: #e93656;
+  transition: 3s;
+}
+
+.percent {
+  display: none;
+  color: #e93656;
+}
+.hover :hover + .percent {
+  display: block;
   color: #e93656;
 }
 
@@ -198,6 +212,9 @@ h1 {
     font-size: 10px;
     color: aquamarine;
   }
+  #me {
+    display: none;
+  }
 }
 @media (max-width: 450px) {
   .icons {
@@ -205,6 +222,12 @@ h1 {
   }
   .social-icons {
     padding: -7px;
+  }
+  *.info-section {
+    flex-wrap: wrap;
+  }
+  .hover {
+    padding: 15px;
   }
 }
 @media (max-width: 370px) {
